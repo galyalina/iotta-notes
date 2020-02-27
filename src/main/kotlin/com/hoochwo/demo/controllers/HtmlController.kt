@@ -1,4 +1,4 @@
-package com.hoochwo.demo.controller
+package com.hoochwo.demo.controllers
 
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
@@ -10,8 +10,8 @@ class HtmlController {
 
     @GetMapping("/")
     fun landing(model: Model): String {
-        model["some_stupid_text"] = "Some placeholder text"
-        model["title"] = "NanaBanana"
+        model["some_stupid_text"] = "Switch is the best cat in the world"
+        model["title"] = "Lazy cat page"
         return "landing"
     }
 
